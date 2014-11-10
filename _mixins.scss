@@ -4,3 +4,25 @@
   background: -moz-linear-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
   background: linear-gradient($top, $bottom);
 }
+
+@mixin border-radius( $radius: 10px ) {
+  -webkit-border-radius: $radius; 
+     -moz-border-radius: $radius;
+          border-radius: $radius; 
+}
+
+// transform
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+      -ms-transform: $value;
+       -o-transform: $value;
+          transform: $value;
+}
+
+// Box shadow
+@mixin box-shadows($value) {
+  -webkit-box-shadow: $value;
+     -moz-box-shadow: $value;
+          box-shadow: $value;
+}
